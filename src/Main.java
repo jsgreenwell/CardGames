@@ -6,11 +6,6 @@ public class Main {
         BlackJack blackjack = new BlackJack();
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("The Dealer has:");
-        System.out.println(blackjack.getHand("dealer"));
-        System.out.println("The Player has:");
-        System.out.println(blackjack.getHand("player"));
-
         // You'll need a regular if here not switch - why?
         if (blackjack.getHandTotal("dealer") == 21) {
             // check if dealer wins and exit if true
@@ -68,13 +63,22 @@ public class Main {
 
             if (turn.equals("exit")) {
                 break;
-            }
+            } else if (turn.equals("player")) {
 
-            System.out.print("Do you want to stop playing? (y/n) ");
-            if (scan.nextLine().toLowerCase().startsWith("y")) {
-                System.out.println("Okay, hope you had fun! Bye");
-                break;
+                System.out.print("Do you want to stop playing? (y/n) ");
+                if (scan.nextLine().toLowerCase().startsWith("y")) {
+                    System.out.println("Okay, hope you had fun! Bye");
+                    break;
+                }
             }
+        }
+
+        if (blackjack.getHandTotal("dealer") < blackjack.getHandTotal("player")) {
+            System.out.println("\n\n\t\tYOU WIN!!!!\n\t\tCONGRATS!!");
+        } else if (blackjack.getHandTotal("dealer") == blackjack.getHandTotal("player")) {
+            System.out.println("\n\n\t\tNot bad a draw.\n\t\tCongrats, I guess.");
+        } else {
+            System.out.println("\n\n\t\tGame Over.\n\t\tYou lose!");
         }
     }
 }
