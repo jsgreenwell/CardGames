@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Finish this up over weekend
+        /* BlackJack code answers
         BlackJack blackjack = new BlackJack();
         Scanner scan = new Scanner(System.in);
 
@@ -79,6 +79,28 @@ public class Main {
             System.out.println("\n\n\t\tNot bad a draw.\n\t\tCongrats, I guess.");
         } else {
             System.out.println("\n\n\t\tGame Over.\n\t\tYou lose!");
+        }
+
+         */
+        // Now for the go fish - maybe it will be simpler
+        // Added player logic - will add dealer (AI) logic later
+
+        Scanner scan = new Scanner(System.in);
+        GoFish fish = new GoFish();
+        System.out.println(fish.dealerHand.toString());
+
+        System.out.println(fish.showPlayersHand());
+        System.out.print("""
+
+                \t\ttRemember you must search for a face in hand
+                \t\tOur else you'll have to 'Go Fish'
+                What card do you want to search for? (face)""");
+        if (fish.checkHand("player", scan.nextLine())) {
+            System.out.println("Other player has a match! Your hand is now: ");
+            System.out.println(fish.showPlayersHand());
+        } else {
+            System.out.printf("No match - you go fish and get a %s ",
+                    fish.fishing("player"));
         }
     }
 }
