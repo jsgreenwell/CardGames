@@ -6,7 +6,7 @@ import java.util.List;
 /* TODO: Most things, including documentation
    Its printing a little skewed due to the Java Console != Terminal .... flush issue?
 */
-public class GraphicStandardCards {
+public class StandardCardGraphicDisplays {
     final private List<String> values = Arrays.asList(
             "  ___  \n / _ \\ \n| | | |\n| |_| |\n \\___/ \n       \n",
             "    _    \n   / \\   \n  / _ \\  \n / ___ \\ \n/_/   \\_\\\n         \n",
@@ -27,11 +27,11 @@ public class GraphicStandardCards {
     protected String curFace = "h";
     protected int curValue = 1;
 
-    public GraphicStandardCards() {
+    public StandardCardGraphicDisplays() {
         setupTable();
     }
 
-    public GraphicStandardCards(String curFace, int curValue) {
+    public StandardCardGraphicDisplays(String curFace, int curValue) {
         this.curFace = curFace;
         this.curValue = curValue;
         setupTable();

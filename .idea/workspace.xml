@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cca49dab-0bb1-49c4-831f-550bb93386b0" name="Changes" comment="Split logic into functions to be refactored into Engine classes">
-      <change afterPath="$PROJECT_DIR$/src/BlackJackEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BlackJackAIPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BlackJackPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HumanPlayer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GraphicPokerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphicStandardCards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlackJackEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComputerPlayer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -103,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709744507204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Split logic into functions to be refactored into Engine classes">
+      <option name="closed" value="true" />
+      <created>1714580486982</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714580486982</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
