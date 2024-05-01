@@ -6,8 +6,8 @@ import java.util.List;
 /* TODO: Most things, including documentation
    Its printing a little skewed due to the Java Console != Terminal .... flush issue?
 */
-public class GraphicPokerCard {
-    private List<String> values = Arrays.asList(new String[]{
+public class GraphicStandardCards {
+    final private List<String> values = Arrays.asList(
             "  ___  \n / _ \\ \n| | | |\n| |_| |\n \\___/ \n       \n",
             "    _    \n   / \\   \n  / _ \\  \n / ___ \\ \n/_/   \\_\\\n         \n",
             " ____  \n|___ \\ \n  __) |\n / __/ \n|_____|\n       \n",
@@ -21,18 +21,17 @@ public class GraphicPokerCard {
             " _   ___\n/ | / _ \\ \n| | || ||\n| | ||_||\n|_| \\___/\n",
             "     _ \n    | |\n _  | |\n| |_| |\n \\___/ \n       \n",
             "  ___  \n / _ \\ \n| | | |\n| |_| |\n \\__\\_\\\n       \n",
-            " _  __\n| |/ /\n| ' / \n| . \\ \n|_|\\_\\\n      \n"
-    });
+            " _  __\n| |/ /\n| ' / \n| . \\ \n|_|\\_\\\n      \n");
 
     private Hashtable<String, String> faces = new Hashtable<>();
     protected String curFace = "h";
     protected int curValue = 1;
 
-    public GraphicPokerCard() {
+    public GraphicStandardCards() {
         setupTable();
     }
 
-    public GraphicPokerCard(String curFace, int curValue) {
+    public GraphicStandardCards(String curFace, int curValue) {
         this.curFace = curFace;
         this.curValue = curValue;
         setupTable();

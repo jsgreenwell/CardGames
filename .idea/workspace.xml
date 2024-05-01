@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca49dab-0bb1-49c4-831f-550bb93386b0" name="Changes" comment="Added main logic">
-      <change afterPath="$PROJECT_DIR$/src/ClassicPlayingCards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GoFish.java" afterDir="false" />
+    <list default="true" id="cca49dab-0bb1-49c4-831f-550bb93386b0" name="Changes" comment="Split logic into functions to be refactored into Engine classes">
+      <change afterPath="$PROJECT_DIR$/src/BlackJackEngine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlackJack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BlackJack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphicPokerCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphicStandardCards.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,13 +95,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709580666241</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="GoFish game with player logic, made abstract">
+      <option name="closed" value="true" />
+      <created>1709744507204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709744507204</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inital setup" />
     <MESSAGE value="Added main logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added main logic" />
+    <MESSAGE value="GoFish game with player logic, made abstract" />
+    <MESSAGE value="Split logic into functions to be refactored into Engine classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Split logic into functions to be refactored into Engine classes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
