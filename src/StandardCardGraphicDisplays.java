@@ -44,6 +44,12 @@ public class StandardCardGraphicDisplays {
         faces.put("s", "\\t   . \\n\\t  /.\\\\ \\n\\t (_._)\\n\\t   |");
     }
 
+    /**
+     * Create a card to display with the passed face and value
+     * @param newFace h, d, c, s <- hearts, diamonds...
+     * @param newValue 0 = Ace, 1-10, 11=Jack, 12=Queen, 13=King
+     * @return
+     */
     public String newCard(String newFace, int newValue) {
         curValue = newValue;
         curFace = newFace;

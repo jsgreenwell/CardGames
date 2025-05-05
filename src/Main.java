@@ -11,10 +11,10 @@ public class Main {
         for (int i=0; i<=games.length; i++) {
             if (i == games.length) {
                 // out of games - print exit choice
-                System.out.printf("\t%d: To Exit", i);
+                System.out.printf("\t%d: To Exit\n", i);
             } else {
                 // or print the choice number & game
-                System.out.printf("\t%d: %s", i, games[i]);
+                System.out.printf("\t%d: %s\n", i, games[i]);
             }
         }
 

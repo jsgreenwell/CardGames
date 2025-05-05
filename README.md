@@ -1,4 +1,13 @@
-# CardGames
+## CardGames
 
-Will build up with students starting with Black Jack and eventually UNO & Poker will be added.
-Also just to show printing with ASCII (tech. Unicode) for art.
+A series of card games including:
+- Blackjack
+- Go Fish
+  - Sublist
+- Uno
+
+Using concepts of ___OOP or 
+Object Oriented Programming___.
+
+![demo](images/GameDemo.gif)
+See [License](LICENSE) for copywrite information
